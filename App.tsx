@@ -1,8 +1,13 @@
 import React from 'react';
-import {CounterScreen} from './src/screens/CounterScreen';
+import {SafeAreaView} from 'react-native';
+import {PositionScreen} from './src/screens/PositionScreen';
 
 const App = () => {
-  return <CounterScreen />;
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      <PositionScreen />
+    </SafeAreaView>
+  );
 };
 
 export default App;
